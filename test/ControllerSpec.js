@@ -4,7 +4,6 @@ describe('controller', function () {
 	'use strict';
 
 	var subject, model, view;
-
 	var setUpModel = function (todos) {
 		model.read.and.callFake(function (query, callback) {
 			callback = callback || query;
@@ -56,11 +55,17 @@ describe('controller', function () {
 		model = jasmine.createSpyObj('model', ['read', 'getCount', 'remove', 'create', 'update']);
 		view = createViewStub();
 		subject = new app.Controller(model, view);
-		console.log(subject);
 	});
 
 	it('should show entries on start-up', function () {
-		// TODO: write test
+
+		var todo = {title: 'my todo'};
+		setUpModel([todo]);
+
+		subject.setView('#/active');
+
+		expect(model.read).toHaveBeenCalled();
+
 	});
 
 	describe('routing', function () {
@@ -84,11 +89,21 @@ describe('controller', function () {
 		});
 
 		it('should show active entries', function () {
-			// TODO: write test
+			var todo = {title: 'my todo', completed: false};		
+			setUpModel([todo]);
+
+			subject.setView('#/active');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
 
 		it('should show completed entries', function () {
-			// TODO: write test
+			var todo = {title: 'my todo', completed: true};		
+			setUpModel([todo]);
+
+			subject.setView('#/completed');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
 	});
 
@@ -135,16 +150,33 @@ describe('controller', function () {
 	});
 
 	it('should highlight "All" filter by default', function () {
-		// TODO: write test
+		var todo = {id: 42, title: 'my todo', completed: false};
+		setUpModel([todo]);
+
+		subject.setView('#/all');
+
+		expect(view.render).toHaveBeenCalledWith('toggleAll', {
+			checked: false
+		});
 	});
 
 	it('should highlight "Active" filter when switching to active view', function () {
-		// TODO: write test
+		var todo = {id: 42, title: 'my todo', completed: false};
+		setUpModel([todo]);
+
+		subject.setView('#/active');
+
+		expect(view.render).toHaveBeenCalledWith('setFilter', 'active');
 	});
 
 	describe('toggle all', function () {
 		it('should toggle all todos to completed', function () {
-			// TODO: write test
+			var todo = {id: 42, title: 'my todo', completed: true};
+			setUpModel([todo]);
+
+			subject.setView('#/completed');
+
+			expect(view.render).toHaveBeenCalled('setFilter', 'completed');
 		});
 
 		it('should update the view', function () {
