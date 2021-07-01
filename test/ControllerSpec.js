@@ -246,14 +246,13 @@ describe('controller', function () {
 
 		// TODO: write test
 		it('should remove an entry from the model', function () {
-			// var todo = {id: 42, title: 'my todo', completed: true};
-			// setUpModel([todo]);
+			var todo = {id: 42, title: 'my todo', completed: true};
+			setUpModel([todo]);
 
-			// subject.setView('');
+			subject.setView('');
+			view.trigger('itemRemove', {id: 42});
 
-			// view.trigger('removeItem', {id: 42});
-
-			// expect(model.remove).toHaveBeenCalledWith(jasmine.any(Function));
+			expect(model.remove).toHaveBeenCalledWith(42, jasmine.any(Function));
 		});
 
 		it('should remove an entry from the view', function () {
