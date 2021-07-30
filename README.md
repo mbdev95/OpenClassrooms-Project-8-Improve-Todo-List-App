@@ -1,0 +1,1 @@
+This repository represents my 8th project with the computer programming learning institution of OpenClassrooms. The goal of this project was too debugg a todo list application, and subsequently write tests to further optimize the todo list application. Futhermore, a formal audit report is written to discuss how the application can be optimized to scale better.
