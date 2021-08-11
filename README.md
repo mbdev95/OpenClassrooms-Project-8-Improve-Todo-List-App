@@ -1,12 +1,14 @@
 # Todo List Application Improvements and Documentation
 
 ## Introduction
-This repository represents my 8th project with the computer programming learning institution of OpenClassrooms. The goal of this project was too debugg a todo list application, and subsequently write tests to further optimize the todo list application. Futhermore, a formal audit report is written to discuss how the application can be optimized to scale better.
+This repository represents my final project with the online learning institution of OpenClassrooms. The goal of this project was to take pre-existing code from a todo list application and debug the code. In addition, I wrote tests to further optimize the todo list application. Futhermore, a formal audit report was written to discuss how the application can be optimized to scale better. Finally, I wrote technical documentation to summarize the programming of the application, with a focus on the use of Model-view-controller infrastructure. I am now comfortable with writing unit tests, audits and technical documentation.
+
+![User-Interface](https://user-images.githubusercontent.com/77469447/128958763-62909a50-be60-4e3e-bf35-b2dcc3a54151.PNG)
 
 ### Skills Used:
 - Debugging
 - Jasmine unit testing
-- Behaviour driven development and Testing driven development
+- Testing driven development
 - Model-view-controller
 - Lighthouse audit reports
 - Writing technical documentation
@@ -14,16 +16,10 @@ This repository represents my 8th project with the computer programming learning
 ### Onlive Todo List Application Link Below:
 https://mbdev95.github.io/OpenClassrooms-Project-8-Improve-Todo-List-App/#/
 
-## Debugging Todo List Application
-
-![User-Interface](https://user-images.githubusercontent.com/77469447/128958763-62909a50-be60-4e3e-bf35-b2dcc3a54151.PNG)
-
-![debugging-example](https://user-images.githubusercontent.com/77469447/128958071-143cc78f-4769-4b3d-9e05-83f1f0f66853.PNG)
-
-
 ## Adding More Unit Tests With Jasmine
 
 ![Unit-Test-Example-1](https://user-images.githubusercontent.com/77469447/128958280-2e073397-0b36-4bc1-9428-93d1a84dfa2f.PNG)
+
 
 ![Unit-Test_Example-2](https://user-images.githubusercontent.com/77469447/128958290-65fb3333-46d1-4758-b775-29084d2868d6.PNG)
 
@@ -33,5 +29,13 @@ https://mbdev95.github.io/OpenClassrooms-Project-8-Improve-Todo-List-App/#/
 
 ## Writing Technical Documentation
 ### Technical Documentation Link: https://github.com/mbdev95/OpenClassrooms-Project-8-Improve-Todo-List-App/blob/master/documentation/Todo%20List%20App%20Technical%20Documentation.pdf
+
+## Debugging Todo List Application
+
+![debugging-example](https://user-images.githubusercontent.com/77469447/128958071-143cc78f-4769-4b3d-9e05-83f1f0f66853.PNG)
+
+I optimized a series of loops and corrected two major errors. The first error involved a simple syntax spelling error.  The second error was an id creation error where the ids were randomly generated leaving the possibility for multiple list items to have the same id. To avoid duplication of an id I made the new id equal to the length of the array holding all the todos, including any newly added todos, plus one, making the id for a new list item equal to all the list items plus one. The image above shows my correction to this error. 
+
+The loops were optimized by eliminating unecessary loops and ensuring all the loops were executed for a number of iterations equal to an array length and not a variable holding an array length. 
 
 ## Conclusion
