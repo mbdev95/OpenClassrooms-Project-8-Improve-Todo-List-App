@@ -81,7 +81,7 @@
 		callback = callback || function () {};
 
 		// The second error, the potential for id repitition error, was on line 88 and was fixed by ensuring each newly generated id for each list item is unique by giving each list item an id value of 'item' + a number equal to the array containing all the list items plus 1.
-        var newId = `${todos.length + 1}`;
+        const newId = `${todos.length + 1}`;
 
 		// If an ID was actually given, find the item and update each property
 		if (id) {
