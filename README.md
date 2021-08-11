@@ -37,7 +37,10 @@ I understand the importance of using test driven-development before writing code
 I used the Developer Tools feature of Lighthouse to generate two audit reports contrasting the performance of the todo list app with a competitor.  The above image shows the Lighthouse audit results for the todo list application.  The results rank the loading performance, accessiblity and best practices out of a 100.  A series of metrics measure different aspects of page load performance, with a focus on the speed at which elements are styled and functional.  In the above link is a report I wrote contrasting the two Lighthouse audit results. I now understand how Lighthouse can be used as a quick way to audit an applications performance in order to determine which changes need to be made to optimize the application.
 
 ## Writing Technical Documentation
+
 ### Technical Documentation Link: https://github.com/mbdev95/OpenClassrooms-Project-8-Improve-Todo-List-App/blob/master/documentation/Todo%20List%20App%20Technical%20Documentation.pdf
+
+The final objective of this project was to write technical documentation summarizes how JavaScript was implemented.  The technical documentation I wrote focuses primarily on the use of Model-view-controller infrastructure to create a flow of data communication from the view, which can be thought of as the DOM, via the controller, the mastermind of the application, to the model, which alters the database. I discuss each part of the Model-view-controller in detail, describing all the major functions of each component.  Also, I breifly discuss the errors that were debugged and the audit report mentioned above. Through the writing of the technical documentation I have learned how the Model-view-controller is a terrific way to create efficient data pathways between the key areas of an application.
 
 ## Debugging Todo List Application
 
@@ -48,3 +51,5 @@ I optimized a series of loops and corrected two major errors. The first error in
 The loops were optimized by eliminating unecessary loops and ensuring all the loops were executed for a number of iterations equal to an array length and not a variable holding an array length. 
 
 ## Conclusion
+
+In conclusion, my eigth project of my OpenClassrooms front-end developer course taught me an improved way of writing code using test driven-development with Jasmine.  Additionally, I practiced debugging, although I was already an excellent debugger prior to this project. Moreover, I learned Lighthouse is a great way to audit your application efficiently and using widely recognized metrics.  Finally, through the creation of technical documentation I engaged with and now understand Model-view-controller infrastructure as an awesome way to write JavaScript. I am now completed my OpenClassrooms bachelor level diploma and look forward to using a combination of all the skills gained to greatly improve many applications while learning more about computer programming in the process.
