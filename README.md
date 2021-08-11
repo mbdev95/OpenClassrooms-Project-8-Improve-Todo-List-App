@@ -32,6 +32,10 @@ I understand the importance of using test driven-development before writing code
 
 ![todo_list_lighthouse_audit_report](https://user-images.githubusercontent.com/77469447/128958352-d218db87-ce44-4e81-8a91-2f86a6bbb68a.PNG)
 
+### Contrasting Audits Report Link: https://github.com/mbdev95/OpenClassrooms-Project-8-Improve-Todo-List-App/blob/master/documentation/Performance%20Analysis.pdf
+
+I used the Developer Tools feature of Lighthouse to generate two audit reports contrasting the performance of the todo list app with a competitor.  The above image shows the Lighthouse audit results for the todo list application.  The results rank the loading performance, accessiblity and best practices out of a 100.  A series of metrics measure different aspects of page load performance, with a focus on the speed at which elements are styled and functional.  In the above link is a report I wrote contrasting the two Lighthouse audit results. I now understand how Lighthouse can be used as a quick way to audit an applications performance in order to determine which changes need to be made to optimize the application.
+
 ## Writing Technical Documentation
 ### Technical Documentation Link: https://github.com/mbdev95/OpenClassrooms-Project-8-Improve-Todo-List-App/blob/master/documentation/Todo%20List%20App%20Technical%20Documentation.pdf
 
