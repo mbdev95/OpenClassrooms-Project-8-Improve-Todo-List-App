@@ -16,7 +16,7 @@ https://mbdev95.github.io/OpenClassrooms-Project-8-Improve-Todo-List-App/#/
 
 ## Debugging Todo List Application
 
-![User-Interface](https://user-images.githubusercontent.com/77469447/128957968-d37412a0-11c5-439f-9919-3428da1ad7cb.PNG)
+![User-Interface](https://user-images.githubusercontent.com/77469447/128958763-62909a50-be60-4e3e-bf35-b2dcc3a54151.PNG)
 
 ![debugging-example](https://user-images.githubusercontent.com/77469447/128958071-143cc78f-4769-4b3d-9e05-83f1f0f66853.PNG)
 
